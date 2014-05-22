@@ -2,8 +2,10 @@ $(document).ready(function() {
 
 	//what does this do?
 	function convert_value_to_string(value) {
-		if (value > 10) {
+		// if (value > 10) {
 			switch (value) {
+				case 1:
+				return 'Ace';
 				case 11:
 				return 'Jack';
 				break;
@@ -14,7 +16,7 @@ $(document).ready(function() {
 				return 'King';
 				break;
 			}
-		}
+		// }
 		return value.toString();
 	}
 
